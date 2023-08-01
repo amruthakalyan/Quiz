@@ -1,0 +1,38 @@
+body{
+     background-color: #fff; 
+    /* color: #fff; */
+}
+.quiz-container{
+    display: flex;
+    margin-left: auto;
+}
+.quiz-container .question{
+    text-align: center;
+}
+.opt-btns{
+    display: block;
+    position: absolute;
+    top: 40px;
+    /* width: 100%; */
+    
+}
+#btn1,#btn2,#btn3,#btn4{
+    width:250px;
+    display: block;
+    padding: 6px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#submit-btn{
+    position: absolute;
+    top:210px;
+    display: block;
+    width:auto;
+    cursor: pointer;
+}
+.score{
+    position: absolute;
+    top:190px;
+    /* display: none; */
+}
