@@ -1,40 +1,63 @@
 body{
-     background-color: #fff; 
-    /* color: #fff; */
+     background-color: #f4f4f3ef; 
+     
   
 }
 .quiz-container{
     display: flex;
-    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+}
+.game{
+    background-color: #8c8c8c;
+    width: 300px;
+    height: 390px;
+    text-align: center;
+    border-radius: 8px;
 }
 .quiz-container .question{
     text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+
 }
 .opt-btns{
     display: block;
-    position: absolute;
-    top: 40px;
-    /* width: 100%; */
+    position:absolute;
+    top:60px;
     
 }
 #btn1,#btn2,#btn3,#btn4{
-    width:250px;
+    width:255px;
     display: block;
-    padding: 6px;
-    margin: 2px;
+    padding:6px;
     cursor: pointer;
+    margin: 3px 19px;
+    position: relative;
+    top: auto;
 }
 
 #submit-btn{
-    position: absolute;
+    position:relative;
     top:210px;
-    display: block;
+    /* display: block; */
     width:auto;
     cursor: pointer;
+    padding: 7px;
+    margin-top: 9px;
+    background-color: #52f52e;
+    border: 3px solid greenyellow;
+    font-weight: 500;
+}
+#submit-btn:hover{
+    background-color: #000000;
+    color: #fff;
 }
 .score{
     position: absolute;
-    top:190px;
+    top:220px;
     /* display: none; */
 }
 #showscore{
@@ -46,7 +69,6 @@ body{
    background-color: #ecc4c4;
    text-align: center;
    font-weight: 700;
-   margin: auto;
    border-radius: 10px;
    display: none;
 }

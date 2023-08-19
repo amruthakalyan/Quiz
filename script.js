@@ -53,8 +53,7 @@ function displayQuestions(){
         opt2.innerHTML = QuizData[currentQuestion].options[1];
         opt3.innerHTML = QuizData[currentQuestion].options[2];
         opt4.innerHTML = QuizData[currentQuestion].options[3];
-     
-       
+          
         
  } 
        
