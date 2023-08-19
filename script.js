@@ -40,13 +40,14 @@ let opt4 = document.getElementById('btn4');
 let score =document.getElementById("score");
 let subBtn =  document.getElementById("submit-btn");
 let currentQuestion =0;
-let scores = 1;
+let scores = 0;
 function displayQuestions(){
     if(currentQuestion < QuizData.length){
         questions.innerHTML = QuizData[currentQuestion].question;
     }
     else{
-         document.location.reload();
+        //  location.reload();
+         showscore.style.display='block';
     }
         opt1.innerHTML = QuizData[currentQuestion].options[0];
         opt2.innerHTML = QuizData[currentQuestion].options[1];
@@ -64,16 +65,20 @@ subBtn.addEventListener('click',()=>{
 })
 function result(e){
 if( e.innerHTML == QuizData[currentQuestion].correctAnswer){
- score.innerHTML =scores++;
+ score.innerHTML =scores++ +1;
   console.log(score.innerHTML);
-  
-  alert(" Correct");
+   alert(" Correct");
 }
 else{
-  score.innerHTML=0;
+  score.innerHTML=score.innerHTML;
   alert("your answer is wrong");
 }
+showscore.innerHTML = `Your final score is ${scores}/6`
 }
+let showscore=document.getElementById('showscore');
+
+
+
 
 
 

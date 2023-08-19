@@ -1,6 +1,7 @@
 body{
      background-color: #fff; 
     /* color: #fff; */
+  
 }
 .quiz-container{
     display: flex;
@@ -35,4 +36,17 @@ body{
     position: absolute;
     top:190px;
     /* display: none; */
+}
+#showscore{
+   position: relative;
+   top: 220px;
+   margin: 20px 20px;
+   height: 50px;
+   width: 130px;
+   background-color: #ecc4c4;
+   text-align: center;
+   font-weight: 700;
+   margin: auto;
+   border-radius: 10px;
+   display: none;
 }
